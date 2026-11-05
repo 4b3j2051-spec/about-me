@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about me.css">
+    <title>ABOUT ME</title>
+</head>
+<body>
+
+     <!-- 主視覺 -->
+    <header class="about-hero">
+        <div class="hero-decoration">ABOUT ME</div>
+
+        <p class="eyebrow">WELCOME TO MY PROFILE</p>
+
+        <h1>關於我</h1>
+
+        <p class="hero-description">
+            +886 | 2005 | INFP
+        </p>
+
+    </header>
+    
+
+    <!-- 電影照片區 -->
+    <section class="hobby-section movie-section">
+        <div class="hobby-heading">
+            <div>
+                <p class="small-title">01 — MOVIE TIME</p>
+                <h2>Movie Collection</h2>
+                <p>我的電影清單</p>
+            </div>
+            <span class="hobby-number">01</span>
+        </div>
+
+        <div class="photo-grid movie-grid">
+            <div class="photo-card large">
+                <img src="jpg/truman.jpg" alt="電影照片1">
+                <div class="photo-caption">
+                    <h3>Favorite Movie</h3>
+                    <p>楚門的世界</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="jpg/Look Back.jpg" alt="電影照片2">
+                <div class="photo-caption">
+                    <h3>Movie Memory</h3>
+                    <p>驀然回首</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="jpg/海街日記.jpg" alt="電影照片3">
+                <div class="photo-caption">
+                    <h3>My Favorite Scene</h3>
+                    <p>海街日記</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 偶像照片區 -->
+    <section class="hobby-section idol-section">
+        <div class="hobby-heading">
+            <div>
+                <p class="small-title">02 — MY IDOL</p>
+                <h2>Idol</h2>
+                <p>我的偶像</p>
+            </div>
+            <span class="hobby-number">02</span>
+        </div>
+
+        <div class="photo-grid idol-grid">
+            <div class="photo-card">
+                <img src="jpg/StrayKids.jpg" alt="偶像照片1">
+                <div class="photo-caption">
+                    <h3>My Favorite Idol</h3>
+                    <p>Stray Kids</p>
+                </div>
+            </div>
+
+            <div class="photo-card large">
+                <img src="jpg/I.N.JPG" alt="偶像照片2">
+                <div class="photo-caption">
+                    <h3>MY BIAS</h3>
+                    <p>I.N</p>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="jpg/Lee Know.jpg" alt="偶像照片3">
+                <div class="photo-caption">
+                    <h3>MY BIAS</h3>
+                    <p>Lee Know</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+       
+
+<!-- 音樂介紹 -->
+<section class="music-section" id="music">
+
+    <div class="section-label">03 / MY MUSIC</div>
+
+    <div class="music-content">
+
+        <!-- 左側介紹 -->
+        <div class="music-heading">
+            <p class="small-title">關於音樂</p>
+            <h2>我的音樂清單</h2>
+
+            <div class="music-text">
+                <p>
+                    音樂是生活中不可缺少的一部分，
+                    不同的旋律總能帶來不同的心情。
+                </p>
+            </div>
+        </div>
+
+        <!-- 右側播放器 -->
+        <div class="music-player">
+
+            <div class="music-cover">
+                <img id="cover" src="images/music1.jpg" alt="專輯封面">
+            </div>
+
+            <div class="music-info">
+                <p class="small-title">NOW PLAYING</p>
+                <h3 id="song-title">歌曲名稱</h3>
+                <p id="song-artist">歌手名稱</p>
+            </div>
+
+            <audio id="audio"></audio>
+
+            <div class="music-controls">
+                <button onclick="prevSong()">⏮</button>
+                <button class="play-btn" onclick="togglePlay()" id="play-btn">▶</button>
+                <button onclick="nextSong()">⏭</button>
+            </div>
+
+            <div class="music-progress">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress"
+                       value="0" min="0" max="100">
+                <span id="duration">0:00</span>
+            </div>
+
+            <!-- 歌曲清單 -->
+            <div class="song-list">
+                <p class="small-title">MY PLAYLIST</p>
+
+                <div id="playlist"></div>
+            </div>
+
+        </div>
+    </div>
+    
+</section>
+
+<!-- 戲劇照片區 -->
+    <section class="hobby-section movie-section">
+        <div class="hobby-heading">
+            <div>
+                <p class="small-title">04 — DRAMA TIME</p>
+                <h2>Drama Collection</h2>
+                <p>我的戲劇清單</p>
+            </div>
+            <span class="hobby-number">04</span>
+        </div>
+
+        <div class="photo-grid movie-grid">
+            <div class="photo-card large">
+                <img src="jpg/Brooklyn nine-nine.jpg" alt="電影照片1">
+                <div class="photo-caption">
+                    <h3>BROOKLYN NINE-NINE</h3>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="jpg/firend.jpg" alt="電影照片2">
+                <div class="photo-caption">
+                    <h3>FRIEND</h3>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="jpg/modern family.png" alt="電影照片3">
+                <div class="photo-caption">
+                    <h3>MODERN FAMILY</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      
+    <!-- 頁尾 -->
+    <footer class="about-footer">
+        <a href="index.html" class="footer-brand">關於我</a>
+        <p></p>
+        <span>ALL　ABOUT ME</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
